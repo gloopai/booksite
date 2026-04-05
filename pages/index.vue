@@ -16,7 +16,7 @@ useSeoMeta({
 });
 
 const config = useRuntimeConfig();
-const base = String(config.public.siteUrl || "http://localhost:3000").replace(
+const base = String(config.public.siteUrl || "https://ik97.com").replace(
   /\/$/,
   ""
 );

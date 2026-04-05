@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || "https://ik97.com";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-04-01",
 
@@ -6,12 +8,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000",
+      siteUrl,
     },
   },
 
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    url: siteUrl,
     name: "Booksite",
   },
 
